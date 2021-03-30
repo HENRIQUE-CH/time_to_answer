@@ -25,6 +25,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'devise'
 gem 'devise'
 gem 'i18n', '~> 1.8', '>= 1.8.9'
+gem 'tty-spinner'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
