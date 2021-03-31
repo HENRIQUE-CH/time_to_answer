@@ -10,6 +10,7 @@ import   'fastclick/lib/fastclick'
 import   'nprogress/nprogress'
 import   'malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar'
 import '../../../lib/assets/javascripts/custom'
+import 'font-awesome/css/font-awesome'
 
 
 console.log('deu certo jquery 2 2 3')

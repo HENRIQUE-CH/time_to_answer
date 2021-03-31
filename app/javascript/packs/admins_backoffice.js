@@ -7,6 +7,7 @@
 import 'jquery/dist/jquery'
 import 'bootstrap/dist/js/bootstrap'
 import  'jquery-easing'
+import '@fortawesome/fontawesome-free/css/all'
 
 import '../../../lib/assets/javascripts/sb-admin-2'
 
