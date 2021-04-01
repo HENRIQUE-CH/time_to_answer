@@ -7,24 +7,32 @@
     <tr scope="row">
       <th>ID</th>
       <th>Email</th>
-      <th></th>
+      <th>  <%= link_to new_admins_backoffice_admin_path, class: "btn btn-success btn-circle btn-sm" do %>
+          <i class="fa fa-plus"></i>
+        <% end %>
+      </th>
     </tr>
     </thead>
-    <tbody >
+    <tbody>
     <% @admins.each do |admin| %>
       <tr>
         <td><%= admin.id %></td>
         <td><%= admin.email %></td>
         <td style="width: 150px">
           <%= link_to edit_admins_backoffice_admin_path(admin) do %>
-             <i class="fa fa-edit"></i>
-             <% end %>
-          <button type="button" style="width:25px;height:25px" class="btn btn-danger btn-circle">
+            <i class="fa fa-edit"></i>
+          <% end %>
+          <%= link_to admins_backoffice_admins_path(admin),:method => :delete,  class: "btn btn-danger btn-circle btn-sm", data: { confirm: "Deseja realmente excluir?" } do %>
             <i class="fa fa-minus"></i>
-          </button>
+          <% end %>
         </td>
       </tr>
     <% end %>
     </tbody>
   </table>
+
+  <div class="text-center" >
+    <%= paginate @admins %>
+  </div>
+
 </div>

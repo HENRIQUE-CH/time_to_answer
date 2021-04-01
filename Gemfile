@@ -28,6 +28,8 @@ gem 'i18n', '~> 1.8', '>= 1.8.9'
 gem 'tty-spinner'
 gem 'faker'
 gem 'pry-rails'
+gem 'kaminari'
+gem 'kaminari-i18n'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'

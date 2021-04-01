@@ -39,22 +39,21 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item">
-      <%= link_to admins_backoffice_welcome_index_path, class:"nav-link" do %>
+      <%= link_to admins_backoffice_welcome_index_path, class: "nav-link" do %>
         <i class="fas fa-fw fa-tachometer-alt"></i>
         Dashboard
       <% end %>
     </li>
 
     <li class="nav-item">
-      <%= link_to admins_backoffice_admins_path, class:"nav-link" do %>
+      <%= link_to admins_backoffice_admins_path, class: "nav-link" do %>
         <i class="fas fa-fw fa-tachometer-alt"></i>
         Administradores
-       <% end %>
+      <% end %>
     </li>
 
     <!-- Divider -->
     <hr class="sidebar-divider">
-
 
 
     <!-- Sidebar Toggler (Sidebar) -->
@@ -116,7 +115,7 @@
             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <span class="mr-2 d-none d-lg-inline text-gray-600 small">Carlos Henrique</span>
-              <%= image_tag 'eu.jpeg', class:"img-profile rounded-circle", alt:"..." %>
+              <%= image_tag 'eu.jpeg', class: "img-profile rounded-circle", alt: "..." %>
             </a>
 
 
@@ -124,11 +123,11 @@
             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                  aria-labelledby="userDropdown">
               <div class="dropdown-divider"></div>
-              <a><%= link_to  destroy_admin_session_path, class:"dropdown-item", method: :delete do %>
+              <a><%= link_to destroy_admin_session_path, method: :delete, class: "dropdown-item" do %>
                   <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                    Logout
+                  Logout
                 <% end %>
-                </a>
+              </a>
 
               </a>
             </div>
@@ -194,6 +193,20 @@
 <!-- Bootstrap core JavaScript-->
 
 <%= javascript_pack_tag 'admins_backoffice' %>
+
+
+
+<% if notice %>
+  <%= javascript_tag do %>
+    $.bootstrapGrowl('<%= notice %>', {
+    type: 'success',
+    align: 'right',
+    allow_dismiss: true,
+    stackup_spacing: 10
+    });
+  <% end %>
+<% end %>
+
 
 </body>
 

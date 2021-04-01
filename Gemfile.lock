@@ -85,6 +85,21 @@ GEM
       concurrent-ruby (~> 1.0)
     jbuilder (2.11.2)
       activesupport (>= 5.0.0)
+    kaminari (1.2.1)
+      activesupport (>= 4.1.0)
+      kaminari-actionview (= 1.2.1)
+      kaminari-activerecord (= 1.2.1)
+      kaminari-core (= 1.2.1)
+    kaminari-actionview (1.2.1)
+      actionview
+      kaminari-core (= 1.2.1)
+    kaminari-activerecord (1.2.1)
+      activerecord
+      kaminari-core (= 1.2.1)
+    kaminari-core (1.2.1)
+    kaminari-i18n (0.5.0)
+      kaminari
+      rails
     listen (3.5.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -206,6 +221,8 @@ DEPENDENCIES
   faker
   i18n (~> 1.8, >= 1.8.9)
   jbuilder (~> 2.7)
+  kaminari
+  kaminari-i18n
   listen (~> 3.3)
   pry-rails
   puma (~> 5.0)
