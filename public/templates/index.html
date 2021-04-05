@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Syncfusion JavaScript (ES5) UI Control</title>
+    <!-- Essential JS 2 Base's material theme (Dependency Styles) -->
+    <link href="Content/ej2/material.css" rel="stylesheet" />
+
+    <!-- Essential JS 2 Button's material theme (Control Styles) -->
+    <link href="https://cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css" rel="stylesheet" type="text/css" />
+
+    <!-- Essential JS 2 Base's global script (Dependency Script) -->
+    <script src="Scripts/ej2/ej2.min.js"></script>
+    <script src="Scripts/ej2/datasource.js"></script>
+    <!-- Essential JS 2 Button's global script (Control Script) -->
+    <script src="https://cdn.syncfusion.com/ej2/ej2-buttons/dist/global/ej2-buttons.min.js"
+        type="text/javascript"></script>
+</head>
+
+<body>zz
+
+    <div class="row">
+        <h1>Syncfusion JavaScript (ES5) Grid Control</h1>
+        <br />
+        <div id="Grid"></div>
+        <script>
+            // Initialize Syncfusion JavaScript Grid control
+            var grid = new ej.grids.Grid({
+                dataSource: window.inventoryData,
+                columns: [
+                    { field: 'Inventor', headerText: 'Inventor Name', width: 140 },
+                    { field: 'NumberofPatentFamilies', headerText: 'No of Patent Families', width: 185, textAlign: 'Right' },
+                    { field: 'Country', headerText: 'Country', width: 120 },
+                    { field: 'Active', headerText: 'Active', width: 130 },
+                    { field: 'Mainfieldsofinvention', headerText: 'Main fields of invention', width: 180 },
+                ],
+                allowSorting: true,
+                allowPaging: true,
+                pageSettings: { pageSize: 15 }
+            });
+            grid.appendTo('#Grid');
+        </script>
+    </div>
+</body>
+
+</html>

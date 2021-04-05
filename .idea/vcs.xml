@@ -5,5 +5,6 @@
     <mapping directory="$PROJECT_DIR$/public/templates/gentelella" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/public/templates/startbootstrap" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/public/templates/startbootstrap-sb-admin-2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/quickstart" vcs="Git" />
   </component>
 </project>

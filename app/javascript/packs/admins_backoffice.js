@@ -6,10 +6,12 @@
 
 import 'jquery/dist/jquery'
 import 'bootstrap/dist/js/bootstrap'
-import  'jquery-easing'
+import 'jquery-easing'
 import '@fortawesome/fontawesome-free/css/all'
 
 import '../../../lib/assets/javascripts/sb-admin-2'
 import 'bootstrap-growl-ifightcrime/jquery.bootstrap-growl'
 
+
 console.log('deu certo webpacker')
+

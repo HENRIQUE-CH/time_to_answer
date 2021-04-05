@@ -6,4 +6,8 @@ class Admin < ApplicationRecord
 
   # Kaminari Pagination
   paginates_per 5
+
+  def self.ransack(i)
+    # code here
+  end
 end

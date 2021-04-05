@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :testes
   namespace :site do
     get 'welcome/index'
   end
