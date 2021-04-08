@@ -13,5 +13,11 @@ import '../../../lib/assets/javascripts/sb-admin-2'
 import 'bootstrap-growl-ifightcrime/jquery.bootstrap-growl'
 
 
+import { Application } from "stimulus"
+import { definitionsFromContext } from "stimulus/webpack-helpers"
+const application = Application.start()
+const context = require.context("controllers", true, /.js$/)
+application.load(definitionsFromContext(context))
+
 console.log('deu certo webpacker')
 

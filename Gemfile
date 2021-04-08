@@ -30,8 +30,7 @@ gem 'faker'
 gem 'pry-rails'
 gem 'kaminari'
 gem 'kaminari-i18n'
-gem 'ransack'
-
+gem 'ransack', '~> 2.4', '>= 2.4.2'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
